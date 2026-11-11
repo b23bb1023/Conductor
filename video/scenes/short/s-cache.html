@@ -1,0 +1,39 @@
+<div class="abs row" id="sc-tot" style="left:96px;top:40px;gap:28px;align-items:baseline" data-at="twenty">
+  <div class="big c green" style="font-size:150px">~<span data-at="twenty" data-in="fade" data-count="20" data-fmt="int" data-cd="0.8" data-ct="twenty+0.1">0</span> B</div>
+  <div class="h2" data-at="twenty" data-in="fade">tokens*</div>
+</div>
+
+<div class="abs row" id="sc-tools" style="left:1010px;top:40px;gap:24px;align-items:baseline" data-at="forty" data-out="role">
+  <div class="big c blue" style="font-size:150px"><span data-at="forty" data-in="fade" data-count="45000" data-fmt="int" data-cd="0.9" data-ct="forty+0.1">0</span>+</div>
+  <div class="h2" data-at="tool" data-in="fade">tool calls*</div>
+</div>
+<div class="pill green" id="sc-opus" style="left:1010px;top:200px;font-size:34px" data-at="Opus" data-out="role">{{icon:check}}0 spent on Opus</div>
+
+<div class="abs hd" style="left:96px;top:258px" data-at="Every" data-in="fade">every prompt, in this order</div>
+<div class="bx blue" id="sc-role" style="left:96px;top:318px;width:560px;height:64px;padding:13px 24px;font-size:32px" data-at="role">role prompt</div>
+<div class="bx blue" id="sc-skills" style="left:96px;top:390px;width:560px;height:64px;padding:13px 24px;font-size:32px" data-at="skills">skills index</div>
+<div class="bx blue" id="sc-repo" style="left:96px;top:462px;width:560px;height:64px;padding:13px 24px;font-size:32px" data-at="repo">repo map</div>
+<div class="abs" style="left:664px;top:316px;width:18px;height:212px;border-right:4px solid #69db7c;border-top:4px solid #69db7c;border-bottom:4px solid #69db7c;border-radius:0 9px 9px 0" data-at="map" data-in="fade"></div>
+<div class="pill green" id="sc-steady" style="left:700px;top:396px" data-at="stable">same every run → cached</div>
+
+<div class="abs" style="left:96px;top:548px;width:560px;height:0;border-top:4px dashed #ffd43b" data-at="map+0.2" data-in="fade"></div>
+<div class="abs" style="left:672px;top:562px;font-size:30px;color:#ffd43b;white-space:nowrap" data-at="map+0.2" data-in="fade">cache boundary</div>
+<div class="bx gray" id="sc-files" style="left:96px;top:600px;width:560px;height:62px;padding:12px 24px;font-size:30px" data-at="map+0.3">this task's files</div>
+<div class="bx gray" id="sc-task" style="left:96px;top:668px;width:560px;height:62px;padding:12px 24px;font-size:30px" data-at="map+0.45">the task</div>
+<div class="abs cap" style="left:96px;top:738px" data-at="map+0.62" data-in="fade">changes every run</div>
+
+<div class="abs big c green" id="sc-pct" style="left:1140px;top:370px;font-size:104px" data-at="ninety"><span data-at="ninety" data-in="fade" data-count="95" data-fmt="int" data-cd="0.6" data-ct="ninety+0.1">0</span>%</div>
+<div class="abs big c green" id="sc-pct2" style="left:1385px;top:370px;font-size:104px" data-at="ninety@2">– 99.97%</div>
+<div class="abs h2" style="left:1140px;top:510px" data-at="input" data-in="fade">of input from cache, per session</div>
+
+<div class="shot" id="sc-shot" style="left:1010px;top:56px;width:800px;height:132px" data-at="role+0.2">
+  <div class="win"><img src="assets/dashboard/dashboard-trajectory.png" alt="" style="width:2400px;left:-393px;top:-308px"></div>
+</div>
+<div class="abs" id="sc-ring" style="left:1594px;top:117px;width:78px;height:30px;--m:#ffd43b" data-mark="ring" data-mt="repo"></div>
+<div class="note" id="sc-note" style="left:1010px;top:206px" data-rot="-2" data-at="role+0.4">one real run</div>
+
+<div class="bar green" id="sc-cached" style="left:96px;top:872px;width:1650px;height:76px" data-at="input+0.2" data-in="grow" data-d="0.9"></div>
+<div class="bar orange" id="sc-uncached" style="left:1752px;top:872px;width:72px;height:76px" data-at="input+0.3" data-in="grow" data-d="0.6"></div>
+<div class="abs" style="left:130px;top:890px;font-size:38px;color:#69db7c;white-space:nowrap" data-at="input+0.7" data-in="fade">95%+ cached</div>
+<div class="abs cap" style="left:96px;top:826px" data-at="input+0.4" data-in="fade">all input, every codebase</div>
+<div class="abs" style="left:1580px;top:822px;font-size:30px;color:#ffa94d;white-space:nowrap" data-at="input+0.55" data-in="fade">uncached</div>

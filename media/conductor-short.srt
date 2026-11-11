@@ -1,0 +1,104 @@
+1
+00:00:00,250 --> 00:00:03,790
+Conductor runs a team of coding agents on any codebase.
+
+2
+00:00:03,790 --> 00:00:06,430
+On one of mine: 592 tasks, 197 agent hours,
+
+3
+00:00:06,430 --> 00:00:08,070
+and 404 commits on main.
+
+4
+00:00:08,422 --> 00:00:08,962
+Opus stays the manager.
+
+5
+00:00:09,662 --> 00:00:12,062
+Over MCP it spawns up to eight opencode agents on
+
+6
+00:00:12,062 --> 00:00:14,042
+free models like Space Bunny and GLM,
+
+7
+00:00:14,042 --> 00:00:16,198
+so the grunt work never spends Opus usage.
+
+8
+00:00:16,198 --> 00:00:17,718
+Each one gets a role, its own git worktree,
+
+9
+00:00:17,718 --> 00:00:19,298
+and a locked list of files.
+
+10
+00:00:19,889 --> 00:00:21,309
+Then Opus waits on one shell command that
+
+11
+00:00:21,389 --> 00:00:22,149
+returns the moment they finish,
+
+12
+00:00:22,649 --> 00:00:24,169
+so its context stays clean.
+
+13
+00:00:24,808 --> 00:00:26,328
+Those agents went through about 20 billion
+
+14
+00:00:26,328 --> 00:00:28,128
+tokens and over 45,000 tool calls,
+
+15
+00:00:28,128 --> 00:00:29,690
+none of it spent on Opus.
+
+16
+00:00:29,690 --> 00:00:31,910
+Every prompt puts its stable part first: the role,
+
+17
+00:00:32,350 --> 00:00:33,870
+the skills and the repo map.
+
+18
+00:00:33,950 --> 00:00:36,890
+So 95 to 99.97 percent of input came straight from cache.
+
+19
+00:00:37,750 --> 00:00:39,410
+It's a deliberate balance, tuned for security and speed:
+
+20
+00:00:40,010 --> 00:00:42,302
+most work runs on its own, between Claude and Conductor.
+
+21
+00:00:42,302 --> 00:00:44,442
+I step in only for a gate, a paid model or a stuck task,
+
+22
+00:00:44,442 --> 00:00:46,882
+and I can stop or steer any run at any time.
+
+23
+00:00:47,091 --> 00:00:48,931
+When a run finishes, Claude checks and verifies it,
+
+24
+00:00:49,251 --> 00:00:50,658
+then merges it or flags it for me.
+
+25
+00:00:50,658 --> 00:00:51,658
+Rate limits skip to the next provider,
+
+26
+00:00:52,238 --> 00:00:53,758
+and it's all one Python process.
+

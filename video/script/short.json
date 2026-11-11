@@ -1,0 +1,77 @@
+{
+ "id": "short",
+ "voice": "af_heart",
+ "speed": 1.3,
+ "scenes": [
+  {
+   "id": "s-hook",
+   "lines": [
+    {
+     "text": "Conductor runs a team of coding agents on any codebase. On one of mine: 592 tasks, 197 agent hours, and 404 commits on main.",
+     "say": "Conductor runs a team of coding agents on any codebase. On one of mine: five hundred ninety two tasks, one hundred ninety seven agent hours, and four hundred four commits on main."
+    }
+   ],
+   "hold": 0.6
+  },
+  {
+   "id": "s-team",
+   "lines": [
+    {
+     "text": "Opus stays the manager. Over MCP it spawns up to eight opencode agents on free models like Space Bunny and GLM, so the grunt work never spends Opus usage.",
+     "say": "Opus stays the manager. Over M C P it spawns up to eight open code agents on free models like Space Bunny and G L M, so the grunt work never spends Opus usage."
+    },
+    {
+     "text": "Each one gets a role, its own git worktree, and a locked list of files.",
+     "say": "Each one gets a role, its own git work tree, and a locked list of files."
+    }
+   ],
+   "hold": 0.9
+  },
+  {
+   "id": "s-wait",
+   "lines": [
+    {
+     "text": "Then Opus waits on one shell command that returns the moment they finish, so its context stays clean."
+    }
+   ],
+   "hold": 1.0
+  },
+  {
+   "id": "s-cache",
+   "lines": [
+    {
+     "text": "Those agents went through about 20 billion tokens and over 45,000 tool calls, none of it spent on Opus.",
+     "say": "Those agents went through about twenty billion tokens and over forty five thousand tool calls, none of it spent on Opus."
+    },
+    {
+     "text": "Every prompt puts its stable part first: the role, the skills and the repo map. So 95 to 99.97 percent of input came straight from cache.",
+     "say": "Every prompt puts its stable part first: the role, the skills, and the repo map. So ninety five to ninety nine point nine seven percent of input came straight from cache."
+    }
+   ],
+   "hold": 1.2
+  },
+  {
+   "id": "s-human",
+   "lines": [
+    {
+     "text": "It's a deliberate balance, tuned for security and speed: most work runs on its own, between Claude and Conductor."
+    },
+    {
+     "text": "I step in only for a gate, a paid model or a stuck task, and I can stop or steer any run at any time."
+    }
+   ],
+   "hold": 0.5
+  },
+  {
+   "id": "s-end",
+   "lines": [
+    {
+     "text": "When a run finishes, Claude checks and verifies it, then merges it or flags it for me."
+    },
+    {
+     "text": "Rate limits skip to the next provider, and it's all one Python process."
+    }
+   ]
+  }
+ ]
+}

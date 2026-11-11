@@ -1,0 +1,48 @@
+@font-face { font-family: "Excalifont"; src: url("assets/fonts/Excalifont-Regular.woff2") format("woff2"); font-display: block; }
+@font-face { font-family: "Comic Shanns"; src: url("assets/fonts/ComicShanns-Regular.woff2") format("woff2"); font-display: block; }
+#root { position: absolute; inset: 0; background: #121212; overflow: hidden; }
+.scene { position: absolute; inset: 0; font-family: "Excalifont", sans-serif; color: #e9ecef; font-size: 34px; line-height: 1.15; --s: #e9ecef; --f: none; }
+.scene * { box-sizing: border-box; }
+.abs { position: absolute; }
+.scene .ink { --s: #e9ecef; --f: #1b1b1b; --c: #e9ecef; }
+.scene .blue { --s: #4dabf7; --f: #0d2b45; --c: #74c0fc; }
+.scene .green { --s: #51cf66; --f: #0f3320; --c: #69db7c; }
+.scene .orange { --s: #ffa94d; --f: #3b2409; --c: #ffa94d; }
+.scene .yellow { --s: #ffd43b; --f: #3a3005; --c: #ffd43b; }
+.scene .red { --s: #ff8787; --f: #421818; --c: #ff8787; }
+.scene .purple { --s: #b197fc; --f: #2a1f52; --c: #b197fc; }
+.scene .teal { --s: #38d9a9; --f: #0b332b; --c: #38d9a9; }
+.scene .gray { --s: #6c757d; --f: #1c1c1c; --c: #909aa3; }
+.c { color: var(--c); }
+.dim { color: #909aa3; }
+.bx, .pill, .note, .card, .term, .shot, .stamp, .bar { position: absolute; isolation: isolate; }
+.bx { padding: 18px 24px; color: var(--c, #e9ecef); }
+.pill { padding: 8px 22px 9px; color: var(--c, #e9ecef); white-space: nowrap; font-size: 30px; display: flex; align-items: center; gap: 10px; }
+.rel { position: relative !important; }
+.note { padding: 10px 20px 12px; color: #ffd43b; --s: #ffd43b; --f: #3a3005; --r: 6; font-size: 30px; white-space: nowrap; }
+.card { padding: 22px 28px; --s: #e9ecef; --f: #181818; }
+.term { padding: 20px 26px; --s: #868e96; --f: #0b0b0c; --r: 12; font-family: "Comic Shanns", monospace; font-size: 29px; line-height: 1.42; color: #dee2e6; white-space: pre; }
+.term .k { color: #74c0fc; } .term .s { color: #69db7c; } .term .n { color: #ffa94d; } .term .m { color: #868e96; } .term .y { color: #ffd43b; } .term .r { color: #ff8787; }
+.mono { font-family: "Comic Shanns", monospace; }
+.shot { --s: #adb5bd; --f: #0d0f14; --r: 10; --sw: 2.4; overflow: visible; }
+.shot .win { position: absolute; inset: 3px; overflow: hidden; border-radius: 8px; z-index: 1; }
+.shot img, .shot video { position: absolute; left: 0; top: 0; display: block; }
+.h1 { font-size: 58px; white-space: nowrap; }
+.h2 { font-size: 44px; white-space: nowrap; }
+.big { font-size: 150px; line-height: 1; white-space: nowrap; font-variant-numeric: tabular-nums; }
+.mid { font-size: 84px; line-height: 1; white-space: nowrap; }
+.sm { font-size: 29px; }
+.nw { white-space: nowrap; }
+.row { display: flex; align-items: center; gap: 16px; }
+.col { display: flex; flex-direction: column; gap: 14px; }
+.logo { display: inline-block; flex: none; }
+.logo svg { display: block; width: 100%; height: 100%; }
+i.arrow { font-style: normal; }
+.stamp { position: absolute; padding: 4px 20px 6px; font-size: 46px; letter-spacing: 2px; color: var(--c); white-space: nowrap; --sw: 4; --r: 8; --f: none; }
+.bar { position: absolute; height: 44px; --r: 6; }
+.ic { width: 28px; height: 28px; display: inline-block; flex: none; vertical-align: -5px; }
+.wrap { display: flex; flex-wrap: wrap; gap: 12px 12px; align-items: center; }
+.num { font-size: 64px; line-height: 1; color: #ffd43b; }
+.seg { position: relative; height: 100%; flex: none; }
+.cap { font-size: 29px; color: #909aa3; white-space: nowrap; }
+.hd { font-size: 40px; white-space: nowrap; }

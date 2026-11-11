@@ -1,0 +1,19 @@
+<div class="bx blue" id="sw2-box" style="left:96px;top:80px;width:560px;height:200px" data-at="0.1">
+  <div class="row" style="gap:14px"><span class="logo" style="width:50px;height:50px;color:#D97757">{{logo:claude}}</span><span style="font-size:50px;color:#e9ecef">Opus waits</span></div>
+  <div class="cap" style="margin-top:14px" data-at="waits" data-in="fade">rides out daemon restarts</div>
+</div>
+<div class="term" id="sw2-cmd" style="left:700px;top:90px;width:1124px;height:150px;font-size:36px" data-at="one"><span class="m">$ </span><span data-at="shell" data-in="type" data-d="0.9">python3 -m conductor.cli <span class="y">wait</span> <span class="n">&lt;run_ids&gt;</span></span>
+<span class="m" data-at="returns" data-in="fade"># long-polls the daemon, exits when a run settles</span></div>
+
+<div class="term" id="sw2-out" style="left:700px;top:280px;width:1124px;height:390px;font-size:38px" data-at="returns">
+<span class="m">{</span>
+<span class="k">  "done"</span>: <span class="s">true</span>,
+<span class="k">  "mode"</span>: <span class="n">"any"</span>,
+<span class="k">  "settled"</span>: <span class="s">true</span>,
+<span class="m">  "pending"</span>: []
+</div>
+
+<div class="abs row" id="sw2-pills" style="left:700px;top:730px;gap:24px">
+  <div class="pill rel green" style="font-size:40px;padding:12px 28px" data-at="context">{{icon:check}}0 turns spent polling</div>
+  <div class="pill rel green" style="font-size:40px;padding:12px 28px" data-at="context+0.3">{{icon:check}}context stays clean</div>
+</div>

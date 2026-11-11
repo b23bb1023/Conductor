@@ -1,0 +1,31 @@
+<div class="card" id="se-rate" style="left:1084px;top:130px;width:740px;height:470px" data-at="Rate">
+  <div class="h1">rate limits</div>
+  <div class="pill red" id="se-a" style="left:28px;top:150px;font-size:36px" data-at="Rate">provider A</div>
+  <div class="stamp red" style="left:300px;top:136px" data-rot="6" data-in="stamp" data-at="limits">429</div>
+  <div class="pill green" id="se-b" style="left:420px;top:330px;font-size:36px" data-at="next">provider B</div>
+  <div class="cap abs" style="left:28px;top:440px" data-at="skip" data-in="fade">skip that provider</div>
+</div>
+<i class="arrow" data-from="#se-a" data-to="#se-b" data-fs="b" data-ts="l" data-bend="60" data-at="next+0.2"></i>
+
+<div class="card" id="se-merge" style="left:96px;top:130px;width:960px;height:470px" data-at="When">
+  <div class="h1">Claude verifies every run</div>
+  <div class="shot" id="se-shot" style="left:28px;top:120px;width:800px;height:160px" data-at="merges">{{shot:dashboard-scope.png|275|131|338|67|2.3}}</div>
+  <div class="abs" style="left:16px;top:108px;width:824px;height:184px;--m:#69db7c" data-mark="ring" data-mt="flags+0.3"></div>
+  <div class="cap abs" style="left:28px;top:330px" data-at="flags" data-in="fade">then merges it, or flags it for me</div>
+</div>
+
+<div class="abs wrap" id="se-pills" style="left:96px;top:660px;width:1728px;gap:16px">
+  <div class="pill rel blue" style="font-size:38px;padding:10px 26px" data-at="Python"><span class="logo" style="width:36px;height:36px">{{logo:python}}</span>1 Python process</div>
+  <div class="pill rel ink" style="font-size:38px;padding:10px 26px" data-at="Python+0.15">standard library only</div>
+  <div class="pill rel ink" style="font-size:38px;padding:10px 26px" data-at="Python+0.3">0 dependencies</div>
+  <div class="pill rel green" style="font-size:38px;padding:10px 26px" data-at="Python+0.45">{{icon:check}}1,311 checks pass</div>
+</div>
+<div class="bx yellow" style="left:96px;top:740px;width:1728px;height:230px" data-at="process">
+  <div class="row" style="gap:36px;height:100%">
+    <div style="font-size:112px;color:#ffd43b;white-space:nowrap">Conductor</div>
+    <div class="col" style="gap:14px">
+      <div class="row" style="gap:14px"><span class="logo" style="width:48px;height:48px;color:#e9ecef">{{logo:github}}</span><span class="mono" style="font-size:46px;color:#e9ecef">github.com/b23bb1023/Conductor</span></div>
+      <div class="h2" style="color:#ced4da" data-at="process" data-in="fade">numbers and docs in the repo</div>
+    </div>
+  </div>
+</div>

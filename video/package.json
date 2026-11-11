@@ -1,0 +1,15 @@
+{
+  "name": "conductor-showcase-video",
+  "private": true,
+  "description": "HyperFrames source for the Conductor showcase videos (detailed + README short)",
+  "scripts": {
+    "voice": "python3 tools/voice.py",
+    "build": "python3 tools/build.py",
+    "audit": "python3 tools/audit.py",
+    "check": "hyperframes check",
+    "mix": "python3 tools/mix.py"
+  },
+  "devDependencies": {
+    "hyperframes": "0.9.33"
+  }
+}
