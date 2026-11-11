@@ -1,6 +1,3 @@
-
-
-
 # Conductor
 
 Conductor lets one Opus session run a team of cheaper coding agents without losing work. Each agent works in its own git worktree and can land only the files it was given. A person holds every decision that costs money or can't be undone.
@@ -9,9 +6,7 @@ I built it for myself, and the code stays private. This repository shows what it
 
 https://github.com/user-attachments/assets/f7be7951-f2a3-4db5-bf2c-7c5c009ad2b0
 
-[![Watch the 55-second overview: 592 coding tasks, 197 agent hours, 404 commits on main](media/poster.png)](media/conductor-short.mp4)
-
-[Watch the 55-second overview](media/conductor-short.mp4). Captions are burned in, and [an `.srt` file](media/conductor-short.srt) sits beside it.
+Captions are burned in, and [an `.srt` file](media/conductor-short.srt) sits beside it.
 
 ```
 1 Python process · 0 runtime dependencies · 7 roles · 6 harnesses · 33 registered models · 1,311 checks
